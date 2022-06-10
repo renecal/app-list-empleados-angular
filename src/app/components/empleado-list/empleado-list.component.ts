@@ -33,6 +33,6 @@ export class EmpleadoListComponent implements OnInit {
     return this.listEmpleados.filter(list =>list.sexo === 'Masculino').length;
   }
 
-  radioButtonSeleccionados = 'todos';
+  radioButtonSeleccionado = 'todos';
 
 }
