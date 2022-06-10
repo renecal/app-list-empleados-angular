@@ -10,6 +10,7 @@
               name="sexo"
               id="todos"
               value="todos"
+              [(ngModel)] = "radioButtonSeleccionados"
             />
             <label class="form-check-label" for="todos">Todos ({{ countEmpleados() }})</label>
           </div>
@@ -19,7 +20,8 @@
               type="radio"
               name="sexo"
               id="masculino"
-              value="option2"
+              value="masculino"
+              [(ngModel)] = "radioButtonSeleccionados"
             />
             <label class="form-check-label" for="masculino">Masculino ({{ countEmpleadosMasc() }})</label>
           </div>
@@ -29,7 +31,8 @@
               type="radio"
               name="sexo"
               id="femenino"
-              value="masculino"
+              value="femenino"
+              [(ngModel)] = "radioButtonSeleccionados"
             />
             <label class="form-check-label" for="femenino"
               >Femenino ({{ countEmpleadosFem() }})</label
