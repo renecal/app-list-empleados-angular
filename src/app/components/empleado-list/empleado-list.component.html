@@ -11,7 +11,7 @@
               id="todos"
               value="todos"
             />
-            <label class="form-check-label" for="todos">Todos (5)</label>
+            <label class="form-check-label" for="todos">Todos ({{ countEmpleados() }})</label>
           </div>
           <div class="form-check form-check-inline">
             <input
@@ -21,7 +21,7 @@
               id="masculino"
               value="option2"
             />
-            <label class="form-check-label" for="masculino">Masculino (3)</label>
+            <label class="form-check-label" for="masculino">Masculino ({{ countEmpleadosMasc() }})</label>
           </div>
           <div class="form-check form-check-inline">
             <input
@@ -32,7 +32,7 @@
               value="masculino"
             />
             <label class="form-check-label" for="femenino"
-              >Femenino (2)</label
+              >Femenino ({{ countEmpleadosFem() }})</label
             >
           </div>
         </div>
@@ -54,12 +54,12 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td >1</td>
-                <td>Juan</td>
-                <td>Pérez</td>
-                <td>masculino</td>
-                <td>25000</td>
+              <tr *ngFor="let empleado of listEmpleados">
+                <td >{{ empleado.legajo }}</td>
+                <td>{{ empleado.nombre }}</td>
+                <td>{{ empleado.apellido }}</td>
+                <td>{{ empleado.sexo }}</td>
+                <td>{{ empleado.salario | currency }}</td>
               </tr>
             </tbody>
           </table>
