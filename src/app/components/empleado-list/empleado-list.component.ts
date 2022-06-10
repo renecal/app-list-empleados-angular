@@ -35,4 +35,8 @@ export class EmpleadoListComponent implements OnInit {
 
   radioButtonSeleccionado = 'todos';
 
+  empleadoCountRadioButtonChange(radioButtonSelect: string) :void {
+    this.radioButtonSeleccionado = radioButtonSelect;
+  }
+
 }

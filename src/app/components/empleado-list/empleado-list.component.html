@@ -5,6 +5,7 @@
         [todos]="countEmpleados()"
         [masculino]="countEmpleadosMasc()"
         [femenino]="countEmpleadosFem()"
+        (countRadioButtonChange)="empleadoCountRadioButtonChange($event)"
         ></app-count-empleados>
     </div>
   </div>
