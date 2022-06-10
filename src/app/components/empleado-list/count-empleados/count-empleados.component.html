@@ -9,7 +9,7 @@
         value="todos"
         [(ngModel)] = "radioButtonSeleccionado"
       />
-      <label class="form-check-label" for="todos">Todos ()</label>
+      <label class="form-check-label" for="todos">Todos ({{ todos }})</label>
     </div>
     <div class="form-check form-check-inline">
       <input
@@ -20,7 +20,7 @@
         value="Masculino"
         [(ngModel)] = "radioButtonSeleccionado"
       />
-      <label class="form-check-label" for="masculino">Masculino ()</label>
+      <label class="form-check-label" for="masculino">Masculino ({{ masculino }})</label>
     </div>
     <div class="form-check form-check-inline">
       <input
@@ -32,7 +32,7 @@
         [(ngModel)] = "radioButtonSeleccionado"
       />
       <label class="form-check-label" for="femenino"
-        >Femenino ()</label
+        >Femenino ({{ femenino }})</label
       >
     </div>
   </div>

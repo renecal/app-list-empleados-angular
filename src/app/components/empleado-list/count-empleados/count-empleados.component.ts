@@ -7,9 +7,13 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CountEmpleadosComponent implements OnInit {
   @Input() todos:number;
+  @Input() masculino:number;
+  @Input() femenino:number;
 
   constructor() {
     this.todos = 0;
+    this.masculino = 0;
+    this.femenino = 0;
    }
 
   ngOnInit(): void {
