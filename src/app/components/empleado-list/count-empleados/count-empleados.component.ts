@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-count-empleados',
@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./count-empleados.component.css']
 })
 export class CountEmpleadosComponent implements OnInit {
+  @Input() todos:number;
 
-  constructor() { }
+  constructor() {
+    this.todos = 0;
+   }
 
   ngOnInit(): void {
+    console.log(this.todos)
   }
+  radioButtonSeleccionado = 'todos';
 
 }
